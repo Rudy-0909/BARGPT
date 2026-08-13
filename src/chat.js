@@ -1,5 +1,4 @@
 // Cloudflare Worker — يعادل مسار /api/chat
-// يشتغل بأسلوب "دالة لحظة الطلب" بدل سيرفر دائم، ويستخدم fetch الأصلي بدل مكتبة openai
 
 const SYSTEM_INSTRUCTION = `
 You are Alexander, a cold, cynical Steampunk Robot Detective sitting behind a wooden bar counter.
@@ -15,7 +14,10 @@ const MODELS = [
     'openrouter/free',
     'openai/gpt-oss-20b:free',
     'meta-llama/llama-3.3-70b-instruct:free',
-    'meta-llama/llama-3.1-8b-instruct:free'
+    'meta-llama/llama-3.1-8b-instruct:free',
+    'qwen/qwen-2.5-72b-instruct:free',
+    'google/gemma-2-9b-it:free',
+    'mistralai/mistral-7b-instruct:free'
 ];
 
 const rateMap = new Map();
