@@ -60,6 +60,14 @@ export async function handleChat(request, env) {
         { role: 'user', content: message }
     ];
 
+    let apiKey = '';
+    try {
+        apiKey = await env.OPENROUTER_API_KEY.get();
+    } catch (err) {
+        console.log('Failed to retrieve API key:', err.message);
+        return Response.json({ text: "The bar is quiet. State your business." });
+    }
+
     let replyText = null;
     let freeQuotaHit = false;
 
@@ -69,7 +77,7 @@ export async function handleChat(request, env) {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
-                    'Authorization': `Bearer ${env.OPENROUTER_API_KEY}`,
+                    'Authorization': `Bearer ${apiKey}`,
                     'HTTP-Referer': 'https://bargpt.pages.dev',
                     'X-Title': 'BARGPT Alexander'
                 },
