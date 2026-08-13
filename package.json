@@ -1,0 +1,6 @@
+{
+  "name": "bargpt-detective-cloudflare",
+  "version": "1.0.0",
+  "private": true,
+  "description": "BARGPT — نسخة Cloudflare Pages. لا تحتاج أي مكتبات (express/openai/node-edge-tts) لأن كل شيء يعتمد على fetch الأصلي المتوفر في بيئة Cloudflare Pages Functions."
+}

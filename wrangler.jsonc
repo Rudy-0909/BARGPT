@@ -1,0 +1,9 @@
+{
+  "name": "bargpt",
+  "compatibility_date": "2026-08-01",
+  "main": "src/index.js",
+  "assets": {
+    "directory": "./public",
+    "binding": "ASSETS"
+  }
+}
