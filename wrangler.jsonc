@@ -5,5 +5,12 @@
   "assets": {
     "directory": "./public",
     "binding": "ASSETS"
-  }
+  },
+  "secrets_store_secrets": [
+    {
+      "binding": "OPENROUTER_API_KEY",
+      "store_id": "e5cc88233c064942a7beffc3e04f3fda",
+      "secret_name": "OPENROUTER_API_KEY"
+    }
+  ]
 }
