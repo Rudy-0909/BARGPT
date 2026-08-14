@@ -13,11 +13,10 @@ STRICT RULES:
 const MODELS = [
     'openrouter/free',
     'openai/gpt-oss-20b:free',
-    'meta-llama/llama-3.3-70b-instruct:free',
-    'meta-llama/llama-3.1-8b-instruct:free',
-    'qwen/qwen-2.5-72b-instruct:free',
-    'google/gemma-2-9b-it:free',
-    'mistralai/mistral-7b-instruct:free'
+    'nvidia/nemotron-nano-9b-v2:free',
+    'google/gemma-4-26b-a4b-it:free',
+    'nvidia/nemotron-3.5-lightning:free',
+    'liquid/lfm-2.5-2.6b:free'
 ];
 
 const rateMap = new Map();
